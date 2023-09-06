@@ -1,0 +1,2 @@
+/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/CMakeFiles/rebuild_cache.dir
