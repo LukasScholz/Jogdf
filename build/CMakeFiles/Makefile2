@@ -63,16 +63,57 @@ CMAKE_BINARY_DIR = /mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/OGDF_JNI_Wrapper.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/OGDF_JNI_Wrapper.dir/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/OGDF_JNI_Wrapper.dir
+
+# All Build rule for target.
+src/CMakeFiles/OGDF_JNI_Wrapper.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OGDF_JNI_Wrapper.dir/build.make src/CMakeFiles/OGDF_JNI_Wrapper.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OGDF_JNI_Wrapper.dir/build.make src/CMakeFiles/OGDF_JNI_Wrapper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/CMakeFiles --progress-num=1,2 "Built target OGDF_JNI_Wrapper"
+.PHONY : src/CMakeFiles/OGDF_JNI_Wrapper.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/OGDF_JNI_Wrapper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/OGDF_JNI_Wrapper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/OGDF_JNI_Wrapper.dir/rule
+
+# Convenience name for target.
+OGDF_JNI_Wrapper: src/CMakeFiles/OGDF_JNI_Wrapper.dir/rule
+.PHONY : OGDF_JNI_Wrapper
+
+# clean rule for target.
+src/CMakeFiles/OGDF_JNI_Wrapper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/OGDF_JNI_Wrapper.dir/build.make src/CMakeFiles/OGDF_JNI_Wrapper.dir/clean
+.PHONY : src/CMakeFiles/OGDF_JNI_Wrapper.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

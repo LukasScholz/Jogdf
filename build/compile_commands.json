@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/build/src",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src -fpermissive -fPIC -std=gnu++11 -o CMakeFiles/OGDF_JNI_Wrapper.dir/LayoutFromEdgeList_internal.cpp.o -c /mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/LayoutFromEdgeList_internal.cpp",
+  "file": "/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/LayoutFromEdgeList_internal.cpp"
+}
+]

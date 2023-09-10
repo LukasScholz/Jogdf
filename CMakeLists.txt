@@ -33,5 +33,7 @@ elseif(CMAKE_HOST_UNIX)
 endif()
 
 #add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/extern)
- #add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/src)
+#add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tmap)
+
  #add_subdirectory(test) 
