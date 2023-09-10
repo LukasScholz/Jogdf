@@ -1,7 +1,7 @@
 
 project(JavaOGDF)
 
-
+find_package(JNI REQUIRED)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
 set(ogdf_DIR "${CMAKE_CURRENT_SOURCE_DIR}/ogdf")
 

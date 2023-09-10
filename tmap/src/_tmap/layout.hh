@@ -22,43 +22,43 @@
 #include <queue>
 #include <algorithm>
 
-#include "../../../ogdf/ogdf/basic/Graph.h"
-#include "../../../ogdf/ogdf/basic/GraphAttributes.h"
-#include "../../../ogdf/ogdf/basic/extended_graph_alg.h"
-#include "../../../ogdf/fileformats/GraphIO.h"
+#include <ogdf/basic/Graph.h>
+#include <ogdf/basic/GraphAttributes.h>
+#include <ogdf/basic/extended_graph_alg.h>
+#include <ogdf/fileformats/GraphIO.h>
 
 // #include <ogdf/energybased/FastMultipoleEmbedder.h>
-#include "../../../ogdf/energybased/multilevel_mixer/ScalingLayout.h"
-#include "../../../ogdf/energybased/multilevel_mixer/BarycenterPlacer.h"
-#include "../../../ogdf/energybased/multilevel_mixer/CirclePlacer.h"
-#include "../../../ogdf/energybased/multilevel_mixer/MedianPlacer.h"
-#include "../../../ogdf/energybased/multilevel_mixer/RandomPlacer.h"
-#include "../../../ogdf/energybased/multilevel_mixer/SolarPlacer.h"
-#include "../../../ogdf/energybased/multilevel_mixer/ZeroPlacer.h"
+#include <ogdf/energybased/multilevel_mixer/ScalingLayout.h>
+#include <ogdf/energybased/multilevel_mixer/BarycenterPlacer.h>
+#include <ogdf/energybased/multilevel_mixer/CirclePlacer.h>
+#include <ogdf/energybased/multilevel_mixer/MedianPlacer.h>
+#include <ogdf/energybased/multilevel_mixer/RandomPlacer.h>
+#include <ogdf/energybased/multilevel_mixer/SolarPlacer.h>
+#include <ogdf/energybased/multilevel_mixer/ZeroPlacer.h>
 
-#include "../../../ogdf/energybased/multilevel_mixer/EdgeCoverMerger.h"
-#include "../../../ogdf/energybased/multilevel_mixer/IndependentSetMerger.h"
-#include "../../../ogdf/energybased/multilevel_mixer/LocalBiconnectedMerger.h"
-#include "../../../ogdf/energybased/multilevel_mixer/SolarMerger.h"
+#include <ogdf/energybased/multilevel_mixer/EdgeCoverMerger.h>
+#include <ogdf/energybased/multilevel_mixer/IndependentSetMerger.h>
+#include <ogdf/energybased/multilevel_mixer/LocalBiconnectedMerger.h>
+#include <ogdf/energybased/multilevel_mixer/SolarMerger.h>
 
-#include "../../../ogdf/basic/PreprocessorLayout.h"
-#include "../../../ogdf/packing/ComponentSplitterLayout.h"
-#include "../../../ogdf/packing/TileToRowsCCPacker.h"
+#include <ogdf/basic/PreprocessorLayout.h>
+#include <ogdf/packing/ComponentSplitterLayout.h>
+#include <ogdf/packing/TileToRowsCCPacker.h>
 
-#include "../../../ogdf/energybased/DavidsonHarelLayout.h"
+#include <ogdf/energybased/DavidsonHarelLayout.h>
 // #include <ogdf/energyb¦ased/DTreeMultilevelEmbedder.h>
-#include "../../../ogdf/energybased/FastMultipoleEmbedder.h"
-#include "../../../ogdf/energybased/FMMMLayout.h"
-#include "../../../ogdf/energybased/GEMLayout.h"
-#include "../../../ogdf/energybased/MultilevelLayout.h"
-#include "../../../ogdf/energybased/PivotMDS.h"
-#include "../../../ogdf/energybased/SpringEmbedderFRExact.h"
-#include "../../../ogdf/energybased/SpringEmbedderGridVariant.h"
-#include "../../../ogdf/energybased/SpringEmbedderKK.h"
-#include "../../../ogdf/energybased/StressMinimization.h"
-#include "../../../ogdf/energybased/TutteLayout.h"
+#include <ogdf/energybased/FastMultipoleEmbedder.h>
+#include <ogdf/energybased/FMMMLayout.h>
+#include <ogdf/energybased/GEMLayout.h>
+#include <ogdf/energybased/MultilevelLayout.h>
+#include <ogdf/energybased/PivotMDS.h>
+#include <ogdf/energybased/SpringEmbedderFRExact.h>
+#include <ogdf/energybased/SpringEmbedderGridVariant.h>
+#include <ogdf/energybased/SpringEmbedderKK.h>
+#include <ogdf/energybased/StressMinimization.h>
+#include <ogdf/energybased/TutteLayout.h>
 
-#include "../../../ogdf/energybased/NodeRespecterLayout.h"
+#include <ogdf/energybased/NodeRespecterLayout.h>
 
 #include <fstream>
 #include <iostream>

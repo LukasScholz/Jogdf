@@ -5,6 +5,8 @@
 #include <layout.hh>
 #include "de_unijena_bioinf_TreeVisualization_TreeVisualizer.h"
 
+float** LayoutFromEdgeList_internals(int number_of_nodes, int* sources, int* destinations, float* weights, int number_of_edges);
+
 JNIEXPORT jobjectArray JNICALL Java_de_unijena_bioinf_TreeVisualization_TreeVisualizer_LayoutFromEdgeList_1internal
   (JNIEnv *env, jobject thisObject, jint j_number_of_nodes, jintArray j_sources, jintArray j_destinations,
   jfloatArray j_weights, jint j_number_of_edges) {
@@ -51,9 +53,6 @@ JNIEXPORT jobjectArray JNICALL Java_de_unijena_bioinf_TreeVisualization_TreeVisu
     return outerArray;
   }
 
-
-float ** LayoutFromEdgeList_internals(int number_of_nodes, int* sources, int* destinations, float* weights, int number_of_edges);
-
 float ** LayoutFromEdgeList_internals(int number_of_nodes, int* sources, int* destinations, float* weights, int number_of_edges) {
 
     // Create a vector of tuples
@@ -64,7 +63,7 @@ float ** LayoutFromEdgeList_internals(int number_of_nodes, int* sources, int* de
         edges.push_back(std::make_tuple(static_cast<uint32_t>(sources[i]), static_cast<uint32_t>(destinations[i]), weights[i]));
     }
     std::tuple<std::vector<float>, std::vector<float>, std::vector<uint32_t>,
-        std::vector<uint32_t>, int*> returned = LayoutFromEdgeList(number_of_nodes, edges);
+        std::vector<uint32_t>, tmap::GraphProperties> returned = tmap::LayoutFromEdgeList(number_of_nodes, edges);
 
     // Extract the vectors from the tuple
     std::vector<float>& vector1 = std::get<0>(returned);

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/../tmap/src/_tmap
+CXX_INCLUDES = -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/../tmap/src/_tmap -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/../ogdf -I/mnt/c/Users/Lukas/Documents/GitHub/Jogdf/src/../ogdf/include -I/usr/lib/jvm/default-java/include -I/usr/lib/jvm/default-java/include/linux
 
 CXX_FLAGS = -fpermissive -fPIC -std=gnu++11
 
