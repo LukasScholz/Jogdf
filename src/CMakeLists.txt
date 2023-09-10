@@ -4,7 +4,6 @@ find_package(JNI REQUIRED)
 set(HEADER "de_unijena_bioinf_TreeVisualization_TreeVisualizer.h")
 add_library(OGDF_JNI_Wrapper STATIC LayoutFromEdgeList_internal.cpp ${HEADER})
 
-
 target_include_directories(OGDF_JNI_Wrapper PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 if (STATIC_STD)
   set(EXTRA_STATIC_LINKS "-static-libgcc -static-libstdc++")
@@ -12,6 +11,7 @@ if (STATIC_STD)
 endif()
 
 target_include_directories(OGDF_JNI_Wrapper PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(OGDF_JNI_Wrapper PUBLIC "../tmap/src/_tmap/")
 
 if (STATIC_STD)
   set(EXTRA_STATIC_LINKS "-static-libgcc -static-libstdc++")
